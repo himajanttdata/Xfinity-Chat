@@ -29,7 +29,7 @@ import uuid
 
 
 
-embeddings = OpenAIEmbeddings(openai_api_base="https://models.inference.ai.azure.com", api_key="os.environ["OPENAI_API_KEY"]", model='text-embedding-3-small')
+embeddings = OpenAIEmbeddings(openai_api_base="https://models.inference.ai.azure.com", api_key=os.environ["OPENAI_API_KEY"], model='text-embedding-3-small')
 
 
 def preprocess_dataset(docs_list):
